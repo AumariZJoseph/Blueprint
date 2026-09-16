@@ -28,7 +28,6 @@
       body { font-family: "Inter", Arial, sans-serif; color: var(--ink); background: var(--white); overflow-x: hidden; }
       .display { font-family: "Barlow Condensed", Impact, sans-serif; letter-spacing: -0.035em; }
       .blueprint-grid {
-        background-color: var(--blue-deep);
         background-image: linear-gradient(rgba(255,255,255,.08) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,.08) 1px, transparent 1px);
         background-size: 32px 32px;
       }
@@ -80,22 +79,26 @@
           <img src="logo.jpg" width="800" height="800" alt="Blueprint Group Inc." class="h-11 w-11 rounded-full object-cover object-center" />
           <span class="display text-[1.7rem] font-bold leading-none text-[#004caa] sm:text-3xl">BLUEPRINT<span class="block text-[.68em] tracking-[.07em] text-[#e23b2d]">GROUP INC.</span></span>
         </a>
-        <nav class="hidden items-center gap-7 text-sm font-semibold lg:flex" aria-label="Main navigation">
-          <a class="focus-ring nav-link" href="#divisions">Divisions</a>
-          <a class="focus-ring nav-link" href="#about">The group</a>
-          <a class="focus-ring nav-link" href="#hardware">Hardware</a>
+        <nav class="hidden items-center gap-6 text-sm font-semibold xl:flex" aria-label="Main navigation">
+          <a class="focus-ring nav-link" href="construction.html">Construction</a>
+          <a class="focus-ring nav-link" href="hardware.html">Hardware</a>
+          <a class="focus-ring nav-link" href="rentals.html">Rentals</a>
+          <a class="focus-ring nav-link" href="management.html">Management</a>
+          <a class="focus-ring nav-link" href="#portfolio">Portfolio</a>
           <a class="focus-ring nav-link" href="#contact">Contact</a>
           <a class="focus-ring inline-flex min-h-11 items-center bg-[#e23b2d] px-5 text-white transition hover:bg-[#be241c]" href="https://wa.me/17587332583" target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp mr-2 text-lg" aria-hidden="true"></i>Message us</a>
         </nav>
-        <button id="menu-button" class="focus-ring inline-flex min-h-11 min-w-11 items-center justify-center border border-[#00316d] text-[#00316d] lg:hidden" aria-controls="mobile-menu" aria-expanded="false" aria-label="Open navigation">
+        <button id="menu-button" class="focus-ring inline-flex min-h-11 min-w-11 items-center justify-center border border-[#00316d] text-[#00316d] xl:hidden" aria-controls="mobile-menu" aria-expanded="false" aria-label="Open navigation">
           <i class="fa-solid fa-bars text-lg" aria-hidden="true"></i>
         </button>
       </div>
-      <nav id="mobile-menu" class="mobile-menu border-t border-slate-200 bg-white lg:hidden" aria-label="Mobile navigation">
+      <nav id="mobile-menu" class="mobile-menu border-t border-slate-200 bg-white xl:hidden" aria-label="Mobile navigation">
         <div class="px-5 py-4 sm:px-8">
-          <a class="focus-ring block rounded px-3 py-3 font-semibold hover:bg-slate-100" href="#divisions">Divisions</a>
-          <a class="focus-ring block rounded px-3 py-3 font-semibold hover:bg-slate-100" href="#about">The group</a>
-          <a class="focus-ring block rounded px-3 py-3 font-semibold hover:bg-slate-100" href="#hardware">Hardware</a>
+          <a class="focus-ring block rounded px-3 py-3 font-semibold hover:bg-slate-100" href="construction.html">Construction</a>
+          <a class="focus-ring block rounded px-3 py-3 font-semibold hover:bg-slate-100" href="hardware.html">Hardware</a>
+          <a class="focus-ring block rounded px-3 py-3 font-semibold hover:bg-slate-100" href="rentals.html">Rentals</a>
+          <a class="focus-ring block rounded px-3 py-3 font-semibold hover:bg-slate-100" href="management.html">Management</a>
+          <a class="focus-ring block rounded px-3 py-3 font-semibold hover:bg-slate-100" href="#portfolio">Portfolio</a>
           <a class="focus-ring block rounded px-3 py-3 font-semibold hover:bg-slate-100" href="#contact">Contact</a>
           <a class="focus-ring mt-2 flex min-h-11 items-center justify-center bg-[#e23b2d] px-5 py-3 font-semibold text-white" href="https://wa.me/17587332583" target="_blank" rel="noopener">Message us on WhatsApp</a>
         </div>
@@ -103,7 +106,10 @@
     </header>
 
     <main id="main">
-      <section id="top" class="hero-structure blueprint-grid relative isolate overflow-hidden text-white">
+      <section id="top" class="hero-structure relative isolate overflow-hidden bg-[#00316d] text-white">
+        <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('hero.png');" aria-hidden="true"></div>
+        <div class="absolute inset-0 bg-[#00316d]/85" aria-hidden="true"></div>
+        <div class="blueprint-grid absolute inset-0 opacity-70" aria-hidden="true"></div>
         <div class="absolute bottom-0 left-0 top-0 w-3 bg-[#e23b2d] sm:w-5" aria-hidden="true"></div>
         <div class="mx-auto grid min-h-[650px] max-w-7xl items-end gap-12 px-7 pb-14 pt-20 sm:min-h-[710px] sm:px-12 sm:pb-20 lg:grid-cols-[1.15fr_.85fr] lg:px-16 lg:pb-24 lg:pt-28">
           <div class="relative z-10 max-w-3xl">
@@ -163,7 +169,7 @@
               </div>
               <h3 class="display mt-10 text-4xl font-bold uppercase text-[#00316d]">Construction</h3>
               <p class="mt-3 max-w-md leading-7 text-[#50626d]">New builds, high-end renovations, remodeling, masonry, structural repairs, finishing works, and general contracting. We also manufacture construction blocks.</p>
-              <a class="focus-ring mt-7 inline-flex min-h-11 items-center font-bold text-[#00316d]" href="#contact">Discuss a construction project <i class="division-arrow fa-solid fa-arrow-right ml-3" aria-hidden="true"></i></a>
+              <a class="focus-ring mt-7 inline-flex min-h-11 items-center font-bold text-[#00316d]" href="construction.html">Explore construction <i class="division-arrow fa-solid fa-arrow-right ml-3" aria-hidden="true"></i></a>
             </article>
             <article class="division-link border-b border-[#00316d] py-9 md:pl-10 lg:py-12">
               <div class="flex items-start justify-between gap-6">
@@ -172,7 +178,7 @@
               </div>
               <h3 class="display mt-10 text-4xl font-bold uppercase text-[#00316d]">Hardware</h3>
               <p class="mt-3 max-w-md leading-7 text-[#50626d]">A public-facing hardware store for builders, contractors, and homeowners—stocking materials and supplies for work that needs to get done properly.</p>
-              <a class="focus-ring mt-7 inline-flex min-h-11 items-center font-bold text-[#00316d]" href="#hardware">See store details <i class="division-arrow fa-solid fa-arrow-right ml-3" aria-hidden="true"></i></a>
+              <a class="focus-ring mt-7 inline-flex min-h-11 items-center font-bold text-[#00316d]" href="hardware.html">See Hardware details <i class="division-arrow fa-solid fa-arrow-right ml-3" aria-hidden="true"></i></a>
             </article>
             <article class="division-link border-b border-[#00316d] py-9 md:border-b-0 md:border-r md:pr-10 lg:py-12">
               <div class="flex items-start justify-between gap-6">
@@ -181,7 +187,7 @@
               </div>
               <h3 class="display mt-10 text-4xl font-bold uppercase text-[#00316d]">Rentals</h3>
               <p class="mt-3 max-w-md leading-7 text-[#50626d]">Construction equipment when you need it: trucks, tractors, backhoes, and machinery for contractors and site managers across Saint Lucia.</p>
-              <a class="focus-ring mt-7 inline-flex min-h-11 items-center font-bold text-[#00316d]" href="https://wa.me/17587332583" target="_blank" rel="noopener">Ask about equipment <i class="division-arrow fa-solid fa-arrow-right ml-3" aria-hidden="true"></i></a>
+              <a class="focus-ring mt-7 inline-flex min-h-11 items-center font-bold text-[#00316d]" href="rentals.html">Explore rentals <i class="division-arrow fa-solid fa-arrow-right ml-3" aria-hidden="true"></i></a>
             </article>
             <article class="division-link border-b border-[#00316d] py-9 md:border-b-0 md:pl-10 lg:py-12">
               <div class="flex items-start justify-between gap-6">
@@ -190,7 +196,7 @@
               </div>
               <h3 class="display mt-10 text-4xl font-bold uppercase text-[#00316d]">Management</h3>
               <p class="mt-3 max-w-md leading-7 text-[#50626d]">Project oversight and coordination for construction work that benefits from a clear line between the plan, people, materials, and the site.</p>
-              <a class="focus-ring mt-7 inline-flex min-h-11 items-center font-bold text-[#00316d]" href="#contact">Plan with us <i class="division-arrow fa-solid fa-arrow-right ml-3" aria-hidden="true"></i></a>
+              <a class="focus-ring mt-7 inline-flex min-h-11 items-center font-bold text-[#00316d]" href="management.html">Explore management <i class="division-arrow fa-solid fa-arrow-right ml-3" aria-hidden="true"></i></a>
             </article>
           </div>
         </div>
@@ -211,6 +217,21 @@
               <div><dt class="text-xs font-bold tracking-[.1em] text-white/60">SUNDAY &amp; HOLIDAYS</dt><dd class="mt-1 text-lg font-semibold">8:00 AM – 1:00 PM</dd></div>
               <div><dt class="text-xs font-bold tracking-[.1em] text-white/60">HARDWARE ENQUIRIES</dt><dd class="mt-1 break-all text-lg font-semibold"><a class="focus-ring hover:text-[#ff786d]" href="mailto:hardware@blueprintslu.com">hardware@blueprintslu.com</a></dd></div>
             </dl>
+          </div>
+        </div>
+      </section>
+
+      <section id="portfolio" class="bg-white py-20 sm:py-28">
+        <div class="mx-auto max-w-7xl px-5 sm:px-8 lg:px-16">
+          <div class="grid gap-8 border-b border-slate-300 pb-9 lg:grid-cols-[1fr_.7fr] lg:items-end">
+            <div><p class="text-sm font-bold tracking-[.1em] text-[#e23b2d]">PORTFOLIO</p><h2 class="display mt-3 text-5xl font-bold uppercase leading-[.9] text-[#00316d] sm:text-6xl">Places taking shape.</h2></div>
+            <p class="max-w-lg leading-7 text-[#50626d]">A representative layout for Blueprint’s project portfolio. Images and project descriptions below are placeholders until the group’s completed-work archive is ready to publish.</p>
+          </div>
+          <div class="mt-10 grid gap-5 lg:grid-cols-12">
+            <article class="image-window min-h-[420px] bg-[#00316d] lg:col-span-7"><img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&amp;fit=crop&amp;w=1600&amp;q=85" width="1600" height="1067" loading="lazy" alt="Placeholder construction project image" /><div class="absolute bottom-0 left-0 right-0 z-10 bg-white p-5 text-[#00316d] sm:right-10"><p class="text-xs font-bold tracking-[.1em] text-[#e23b2d]">REPRESENTATIVE PLACEHOLDER</p><h3 class="display mt-2 text-3xl font-bold uppercase">Coastal residence</h3><p class="mt-1 text-sm text-[#50626d]">Residential construction / Gros Islet</p></div></article>
+            <article class="image-window min-h-[300px] bg-[#edf2f4] lg:col-span-5"><img src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&amp;fit=crop&amp;w=1200&amp;q=85" width="1200" height="900" loading="lazy" alt="Placeholder project planning image" /><div class="absolute bottom-0 left-0 z-10 bg-[#e23b2d] p-5 text-white"><h3 class="display text-3xl font-bold uppercase">Hospitality fit-out</h3><p class="mt-1 text-sm text-white/80">Project coordination / Saint Lucia</p></div></article>
+            <article class="border-l-4 border-[#e23b2d] bg-[#edf2f4] p-7 lg:col-span-5 lg:row-start-2"><p class="text-sm font-bold tracking-[.1em] text-[#e23b2d]">COMING INTO VIEW</p><h3 class="display mt-4 text-4xl font-bold uppercase leading-[.92] text-[#00316d]">A project gallery built around the work, not generic claims.</h3><p class="mt-5 leading-7 text-[#50626d]">Each future portfolio entry can add the location, scope, division involvement, and a direct route to ask about a comparable project.</p></article>
+            <article class="image-window min-h-[340px] bg-[#00316d] lg:col-span-7"><img src="https://images.unsplash.com/photo-1581092160562-40aa08e78837?auto=format&amp;fit=crop&amp;w=1600&amp;q=85" width="1600" height="1067" loading="lazy" alt="Placeholder construction team image" /><div class="absolute bottom-0 right-0 z-10 bg-[#00316d] p-5 text-white"><h3 class="display text-3xl font-bold uppercase">Commercial siteworks</h3><p class="mt-1 text-sm text-white/75">Construction and rentals / Beausejour</p></div></article>
           </div>
         </div>
       </section>
@@ -260,7 +281,7 @@
     <footer class="bg-[#14212b] text-white">
       <div class="mx-auto grid max-w-7xl gap-10 px-5 py-12 sm:px-8 md:grid-cols-[1.2fr_.8fr_.8fr] lg:px-16">
         <div><a class="focus-ring inline-flex items-center gap-3" href="#top"><img src="logo.jpg" width="800" height="800" alt="" class="h-11 w-11 rounded-full object-cover" /><span class="display text-3xl font-bold">BLUEPRINT<span class="block text-[.65em] tracking-[.07em] text-[#ff786d]">GROUP INC.</span></span></a><p class="mt-5 max-w-sm leading-7 text-white/65">Construction, hardware, equipment rental, and project management for Saint Lucia.</p></div>
-        <div><h2 class="text-sm font-bold tracking-[.1em] text-white/60">EXPLORE</h2><ul class="mt-4 space-y-3"><li><a class="focus-ring hover:text-[#ff786d]" href="#divisions">Construction</a></li><li><a class="focus-ring hover:text-[#ff786d]" href="#hardware">Hardware</a></li><li><a class="focus-ring hover:text-[#ff786d]" href="#divisions">Rentals</a></li><li><a class="focus-ring hover:text-[#ff786d]" href="#divisions">Management</a></li></ul></div>
+        <div><h2 class="text-sm font-bold tracking-[.1em] text-white/60">EXPLORE</h2><ul class="mt-4 space-y-3"><li><a class="focus-ring hover:text-[#ff786d]" href="construction.html">Construction</a></li><li><a class="focus-ring hover:text-[#ff786d]" href="hardware.html">Hardware</a></li><li><a class="focus-ring hover:text-[#ff786d]" href="rentals.html">Rentals</a></li><li><a class="focus-ring hover:text-[#ff786d]" href="management.html">Management</a></li></ul></div>
         <div><h2 class="text-sm font-bold tracking-[.1em] text-white/60">CONNECT</h2><ul class="mt-4 space-y-3"><li><a class="focus-ring hover:text-[#ff786d]" href="https://wa.me/17587332583" target="_blank" rel="noopener">WhatsApp</a></li><li><a class="focus-ring hover:text-[#ff786d]" href="https://facebook.com/blueprintslu" target="_blank" rel="noopener">Facebook</a></li><li><a class="focus-ring hover:text-[#ff786d]" href="https://instagram.com/blueprinthardware" target="_blank" rel="noopener">Instagram</a></li></ul></div>
       </div>
       <div class="border-t border-white/15"><div class="mx-auto flex max-w-7xl flex-col gap-3 px-5 py-5 text-sm text-white/55 sm:flex-row sm:justify-between sm:px-8 lg:px-16"><p>© <span id="year"></span> Blueprint Group Inc. All rights reserved.</p><p>Beausejour Rd, Gros Islet, Saint Lucia</p></div></div>
